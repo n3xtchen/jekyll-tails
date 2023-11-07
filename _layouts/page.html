@@ -1,5 +1,11 @@
 ---
-layout: default
+layout: base
 ---
-{% include JB/setup %}
-{% include themes/next-tech/page.html %}
+<div class="blog-post">
+  <div class="blog-post-title">
+    <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  </div>
+  <hr />
+  {{ content }}
+
+</div>
